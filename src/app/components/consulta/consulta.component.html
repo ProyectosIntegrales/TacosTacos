@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row m-2">
+    <div class="col">
+      <ngx-select-dropdown
+        [(ngModel)]="selectedEstado"
+        (change)="selectEstado(estado);"
+        [options]="estados"
+        [config]="estadosConf"
+      >
+      </ngx-select-dropdown>
+    </div>
+  </div>
+  <div class="row m-2">
+    <div class="col">
+      <ngx-select-dropdown
+        [(ngModel)]="selectedCiudad"
+        (change)="selectCiudad();"
+        [options]="ciudades"
+        [config]="ciudadesConf"
+      >
+        <option *ngFor="let ciudad of ciudades" [ngValue]="ciudad"
+          >{{ ciudad.name }} {{ ciudad.id }}</option
+        >
+      </ngx-select-dropdown>
+    </div>
+  </div>
+</div>

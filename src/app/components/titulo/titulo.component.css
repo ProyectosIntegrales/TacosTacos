@@ -1,0 +1,18 @@
+.back {
+  height: 10vh;
+  padding: 1em;
+  background-image: url("../../../assets/images/images.jpg");
+  background-size: 200px;
+}
+
+.text {
+  color: #fff000;
+  text-shadow: 1px 3px 0 #000, 1px 13px 5px #000;
+}
+
+.icon {
+  height: 100px;
+  position: fixed;
+  right: 10px;
+  top: 5px;
+}

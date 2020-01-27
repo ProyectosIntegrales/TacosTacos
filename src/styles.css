@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  font-family: sans-serif;
+}
+body {
+  background: rgb(255, 235, 0);
+  background: radial-gradient(
+    circle,
+    rgba(255, 235, 0, 1) 0%,
+    rgba(255, 149, 0, 1) 100%
+  );
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("assets/fonts/icomoon.eot?eh7l1v");
+  src: url("assets/fonts/icomoon.eot?eh7l1v#iefix") format("embedded-opentype"),
+    url("assets/fonts/icomoon.ttf?eh7l1v") format("truetype"),
+    url("assets/fonts/icomoon.woff?eh7l1v") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="nsdicon-"],
+[class*=" nsdicon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nsdicon-search:before {
+  content: "\f002";
+}
+.nsdicon-check:before {
+  content: "\f00c";
+}
+.nsdicon-close:before {
+  content: "\f00d";
+}
+.nsdicon-remove:before {
+  content: "\f00d";
+}
+.nsdicon-times:before {
+  content: "\f00d";
+}
+.nsdicon-angle-down:before {
+  content: "\f107";
+}

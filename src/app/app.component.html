@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<app-title></app-title>
+<div class="row mt-3">
+  <div class="col-12 col-sm-6">
+    <app-consulta
+      (ciudadSelected)="resultados.selectCiudad($event); agregar.selectCiudad($event);"
+    ></app-consulta>
+    <app-agregar #agregar></app-agregar>
+  </div>
+  <div class="col-12 col-sm-6">
+    <app-resultados #resultados></app-resultados>
+  </div>
+</div>
